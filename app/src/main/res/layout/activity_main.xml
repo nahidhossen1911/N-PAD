@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#010D12"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer_layout"
+
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#010D12"
+
+            >
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/meterialToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/more"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/search_back"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            >
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:src="@drawable/ic_more"
+                                android:layout_gravity="center"
+
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My NotePad"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="24dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="53dp"
+                            />
+
+                      <LinearLayout
+                          android:id="@+id/writenote"
+                          android:layout_width="40dp"
+                          android:layout_height="40dp"
+                          android:layout_alignParentRight="true"
+                          android:background="@drawable/search_back"
+                          android:layout_marginRight="15dp"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginBottom="5dp"
+                          android:orientation="horizontal"
+                          android:gravity="center"
+                          >
+
+                          <ImageView
+                              android:layout_width="22dp"
+                              android:layout_height="22dp"
+                              android:src="@drawable/ic_write1"
+                              android:layout_gravity="center"
+
+                              />
+
+                      </LinearLayout>
+
+
+
+
+
+                    </RelativeLayout>
+
+
+
+
+
+            </com.google.android.material.appbar.MaterialToolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/notfound"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/addnote"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_not_found"
+                android:layout_gravity="center"
+                android:layout_marginTop="-60dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Add Note"
+                android:layout_marginTop="10dp"
+                android:textColor="#32FFFFFF"
+                android:textSize="17dp"
+                />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navgation"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_head"
+        android:importantForAccessibility="yes"
+        android:visibility="visible"
+        app:menu="@menu/nav_item"
+        app:itemTextColor="#F1FFFFFF"
+        android:background="#010D12"
+        app:itemIconTint="#F6FFFFFF"
+        app:itemShapeFillColor="@color/nav_background"
+        />
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

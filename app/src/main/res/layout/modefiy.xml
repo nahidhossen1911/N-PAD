@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#010D12"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#F6FFFFFF"
+        android:text="Title"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/e1"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#F6FFFFFF"
+        android:text="Body"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:maxLines="3"
+        android:fontFamily="@font/e3"
+        android:ellipsize="end"
+        />
+
+
+    <EditText
+        android:id="@+id/confirm_delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="If you Delete this note then type 'yes'"
+        android:textColorHint="#25FFFFFF"
+        android:background="@drawable/delete_confirm"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="23dp"
+        android:textColor="#F6FFFFFF"
+        android:maxLines="1"
+        android:minLines="1"
+        android:textSize="17dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#F6FFFFFF"
+        android:background="@drawable/delete_back"
+        android:gravity="center"
+        android:text="Delete"
+        android:layout_marginTop="13dp"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#F6FFFFFF"
+        android:background="@drawable/item_back"
+        android:gravity="center"
+        android:text="Cancel"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+
+</LinearLayout>

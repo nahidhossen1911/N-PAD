@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NPAD" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">#010D12</item>
+        <item name="android:navigationBarColor">#010D12</item>
+
+        <item name="colorAccent">#EDEDED</item>
+    </style>
+
+    <style name="Theme.NPAD" parent="Base.Theme.NPAD" />
+
+    <style name="Widget.App.NavigationView" parent="Widget.MaterialComponents.NavigationView">
+<!--        <item name="itemIconTint">@color/navigation_item_color</item>-->
+<!--        <item name="itemTextColor">@color/navigation_item_color</item>-->
+        <item name="itemShapeFillColor">@color/new_whihe</item>
+    </style>
+
+
+
+</resources>

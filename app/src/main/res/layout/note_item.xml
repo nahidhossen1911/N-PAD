@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/goThere"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/item_back"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="7dp"
+    android:padding="5dp"
+    android:layout_marginLeft="14dp"
+    android:layout_marginRight="14dp"
+    android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+
+
+            >
+<!--            <ImageView-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:src="@drawable/ic_write"-->
+<!--                android:padding="12dp"-->
+<!--                android:layout_marginTop="-3dp"-->
+<!--                />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:orientation="vertical"
+                android:layout_marginRight="80dp"
+                >
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android Studio Installation"
+                    android:textSize="19dp"
+                    android:textColor="#ECF1F1F1"
+                    android:paddingRight="5dp"
+                    android:maxLines="1"
+                    android:fontFamily="@font/e1"
+                    android:ellipsize="end"
+                    />
+                <TextView
+                    android:id="@+id/body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Users are moving from doing everything on phones to an increasingly multidevice world. Android is evolving to help you reach users where they are with the features they want, on phones, tablets, watches, TVs and even in cars. "
+                    android:textSize="14dp"
+                    android:textColor="#76D1D1D1"
+                    android:maxLines="2"
+                    android:paddingRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/e3"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-75dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginTop="-6dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_star"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01-01-2024"
+                    android:textSize="9dp"
+                    android:textColor="#CC666666"
+                    android:maxLines="1"
+                    android:layout_marginTop="7dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+</LinearLayout>

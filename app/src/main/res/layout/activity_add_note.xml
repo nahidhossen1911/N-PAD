@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_note"
+    android:background="#010D12"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        >
+<!--        <ImageView-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_marginLeft="13dp"-->
+<!--            android:src="@drawable/ic_back"-->
+<!--            />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create a new note"
+            android:textSize="20dp"
+            android:textColor="#DCFFFFFF"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="Save"
+            android:textColor="#E4FFFFFF"
+            android:layout_marginLeft="-90dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:background="@drawable/item_back"
+            />
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginLeft="15dp"
+                    />
+                <EditText
+                    android:id="@+id/editTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#010D12"
+                    android:textSize="21dp"
+                    android:textStyle="bold"
+                    android:textColor="#DCFFFFFF"
+                    android:hint="Title note"
+                    android:textColorHint="#3CFFFFFF"
+                    android:paddingRight="17dp"
+                    android:layout_marginLeft="7dp"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#010D12"
+                android:textSize="17dp"
+                android:textColor="#DCFFFFFF"
+                android:hint="Body note"
+                android:textColorHint="#3CFFFFFF"
+                android:textStyle="normal"
+                android:layout_marginLeft="14dp"
+                android:paddingRight="17dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/e3"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:checkable="true"
+        />
+    <item android:title="AppLock"
+        android:id="@+id/applock"
+        android:icon="@drawable/ic_finger"
+        android:checkable="true"
+
+        />
+    <item
+        android:id="@+id/help"
+        android:checkable="true"
+        android:icon="@drawable/ic_help"
+        android:title="Help"
+ />
+    <item android:title="Developer"
+        android:id="@+id/developer"
+        android:checkable="true"
+        android:icon="@drawable/ic_developer"/>
+
+    <item android:title="About"
+        android:id="@+id/about"
+        android:checkable="true"
+        android:icon="@drawable/ic_about"
+        />
+</menu>
